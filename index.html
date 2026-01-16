@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>猫カフェダンジョン</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a; /* 外側の背景色（濃いグレー） */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.60.0/dist/phaser.min.js"></script>
+    
+    <script src="src/constants/CatTypes.js"></script>
+    <script src="src/classes/Cat.js"></script>
+    <script src="src/scenes/BootScene.js"></script>
+    <script src="src/scenes/CafeScene.js"></script>
+    <script src="src/main.js"></script>
+
+</head>
+<body>
+    <div id="game-container"></div>
+</body>
+</html>
