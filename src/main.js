@@ -17,8 +17,9 @@ const config = {
         }
     },
     scene: [
-        BootScene, // 最初に読み込み
-        CafeScene  // 次にカフェ
+        BootScene,
+        CafeScene,
+        DungeonScene // これを追加
     ]
 };
 

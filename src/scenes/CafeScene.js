@@ -34,6 +34,22 @@ class CafeScene extends Phaser.Scene {
                 this.showStats(cat);
             });
         });
+        
+        // --- ダンジョン出発ボタン ---
+        const goDungeonBtn = this.add.text(180, 550, '夜の探索へ出発！', {
+            fontSize: '20px',
+            fill: '#ffffff',
+            backgroundColor: '#d2691e', // オレンジ色
+            padding: { x: 20, y: 15 }
+        })
+        .setOrigin(0.5)
+        .setInteractive();
+
+        // ボタンが押されたらシーン切り替え
+        goDungeonBtn.on('pointerdown', () => {
+            // シーンを 'DungeonScene' に切り替える
+            this.scene.start('DungeonScene');
+        });
     }
 
     showStats(cat) {
